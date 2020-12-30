@@ -199,6 +199,26 @@ body {
   align-items: center;
 }
 
+.container-banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.scaled {
+  width: 100%;
+}
+
+.glide__track.glide-desktop {
+  display: none;
+}
+
+.glide__track .glide__slides {
+  width: 100%!important;
+}
+
 @media (min-width: 360px) {
   .container {
     width: 100%;
@@ -211,6 +231,12 @@ body {
   }
   .nav-mobile {
     display: flex;
+  }
+  .glide-mobile {
+    display: block;
+  }
+  .glide__track.glide-desktop {
+    display: none;
   }
 }
 
@@ -232,15 +258,18 @@ body {
   .nav-mobile {
     display: none;
   }
+  .glide-mobile {
+    display: none;
+  }
+  .glide__track.glide-desktop {
+    display: block;
+  }
 }
 
 @media (min-width: 960px) {
   .container {
     width: 930px;
   }
-}
-
-@media (max-width: 1280px) {
 }
 
 @media (min-width: 1280px) {

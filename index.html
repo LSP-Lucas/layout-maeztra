@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap"
     rel="stylesheet">
-  <title>E-commerce</title>
+  <link rel="stylesheet" href="public/css/glide.core.min.css">
+  <link rel="stylesheet" href="public/css/glide.theme.min.css">
   <link rel="stylesheet" href="public/css/styles.css">
+  <title>E-commerce</title>
 </head>
 
 <body>
@@ -29,7 +32,8 @@
               <button>Buscar</button>
             </form>
             <div class="options-menu">
-              <a class="hide-element" href="http://"><img src="public/img/icon-search.svg" width="18,28px" height="16px" alt="Pesquisar">Pesquisar</a>
+              <a class="hide-element" href="http://"><img src="public/img/icon-search.svg" width="18,28px" height="16px"
+                  alt="Pesquisar">Pesquisar</a>
               <a href="http://"><img src="public/img/icon-user.svg" width="14px" height="16px" alt="Minha conta">Minha
                 conta</a>
               <a href="http://"><img src="public/img/icon-heart.svg" width="18,28px" height="16px"
@@ -58,7 +62,7 @@
         <div class="container">
           <div class="nav-options-mobile">
             <div class="group-options-01">
-              <a href="#"><img src="https://img.icons8.com/material-sharp/32/353535/menu--v1.png"/></a>
+              <a href="#"><img src="https://img.icons8.com/material-sharp/32/353535/menu--v1.png" /></a>
               <a id="logo-mobile" href="#">
                 <img src="public/img/logo.png" alt="Maeztra">
               </a>
@@ -66,14 +70,44 @@
             <div class="group-options-02">
               <a href="#">
                 <img src="public/img/icon-search.svg" width="24px" height="24px" alt="Pesquisar"></a>
-              <a href="http://"><img src="public/img/icon-vector.svg" width="21px" height="24px"
-                  alt="Meu carrinho"></a>
+              <a href="http://"><img src="public/img/icon-vector.svg" width="21px" height="24px" alt="Meu carrinho"></a>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </header>
   </div>
+  <main>
+    <section class="container-banner">
+      <div class="glide">
+        <div class="glide__track glide-desktop" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-desktop.jpg"></li>
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-desktop.jpg"></li>
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-desktop.jpg"></li>
+          </ul>
+        </div>
+        <div class="glide__track glide-mobile" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-mobile.png"></li>
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-mobile.png"></li>
+            <li class="glide__slide"><img class="scaled" src="public/img/banner-mobile.png"></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="public/img/prev.png"></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="public/img/next.png"></button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="public/scripts/scripts.js"></script>
 </body>
 
