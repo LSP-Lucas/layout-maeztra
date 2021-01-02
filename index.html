@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="public/css/styles.css">
 </head>
 <body>
@@ -77,7 +79,28 @@
       </nav>
     </div>
   </header>
-  
+  <section class="banner">
+    <div class="arrows">
+      <div id="arrow-prev" class="arrow"><img src="public/img/icons/icon-prev.svg" alt="Voltar"></div>
+      <div id="arrow-next" class="arrow"><img src="public/img/icons/icon-next.svg" alt="Avançar"></div>
+    </div>
+    <div class="banner-web">
+      <img class="slide" src="public/img/banners/banner-web.svg" alt="Banner 1">
+      <img class="slide" src="public/img/banners/banner-web.svg" alt="Banner 2">
+      <img class="slide" src="public/img/banners/banner-web.svg" alt="Banner 3">
+      <img class="slide" src="public/img/banners/banner-web.svg" alt="Banner 4">
+      <img class="slide" src="public/img/banners/banner-web.svg" alt="Banner 5">
+    </div>
+    <div class="banner-web disable">
+      <img class="slide" src="public/img/banners/banner-mobile.svg" alt="Banner 1">
+      <img class="slide" src="public/img/banners/banner-mobile.svg" alt="Banner 2">
+      <img class="slide" src="public/img/banners/banner-mobile.svg" alt="Banner 3">
+      <img class="slide" src="public/img/banners/banner-mobile.svg" alt="Banner 4">
+      <img class="slide" src="public/img/banners/banner-mobile.svg" alt="Banner 5">
+    </div>
+    
+  </section>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="public/scripts/scripts.js"></script>
 </body>
 </html>

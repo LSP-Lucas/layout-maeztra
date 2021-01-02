@@ -119,6 +119,61 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   font-weight: bold;
 }
 
+/* banner */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-web.disable {
+  display: none;
+}
+
+.banner .arrows {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 1632px;
+  padding: 0 4rem;
+  width: 100%;
+  top: 43%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  outline: none;
+}
+
+.banner-web .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-web .slick-dots li {
+  list-style: none;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 1.6rem 8px;
+  border-radius: 50%;
+  border: 2px solid #faa500;
+  display: inline-block;
+}
+
+.banner-web .slick-dots li.slick-active {
+  background-color: #faa500;
+}
+
+.banner-web .slick-dots li button {
+  display: none;
+}
+
 @media (max-width: 1632px) {
   header .container {
     max-width: 1224px;
@@ -162,6 +217,11 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   header .container .form {
     margin: 0 5.7rem 0 4.3rem;
   }
+
+  /* banner */
+  .banner .arrows {
+    padding: 0 2rem;
+  }
 }
 
 @media (max-width: 790px) {
@@ -195,5 +255,15 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
 
   header .container .menu-mobile ul li {
     list-style: none;
+  }
+
+  /* banner */
+
+  .banner .banner-web {
+    display: none;
+  }
+
+  .banner .banner-web.disable {
+    display: block;
   }
 }
