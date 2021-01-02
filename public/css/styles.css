@@ -16,6 +16,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -180,7 +181,7 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   position: absolute;
   margin: 0 auto;
   max-width: 1632px;
-  padding: 0 4rem;
+  padding: 0 2rem;
   width: 100%;
   top: 43%;
   display: flex;
