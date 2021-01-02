@@ -119,16 +119,12 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   font-weight: bold;
 }
 
-/* banner */
+/* banner web */
 
 .banner {
   position: relative;
   width: 100%;
   height: auto;
-}
-
-.banner .banner-web.disable {
-  display: none;
 }
 
 .banner .arrows {
@@ -171,6 +167,55 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
 }
 
 .banner-web .slick-dots li button {
+  display: none;
+}
+
+/* banner mobile */
+
+.banner.disable {
+  display: none;
+}
+
+.banner .arrows-mobile {
+  position: absolute;
+  margin: 0 auto;
+  max-width: 1632px;
+  padding: 0 4rem;
+  width: 100%;
+  top: 43%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  outline: none;
+}
+
+.banner-web-mobile .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-web-mobile .slick-dots li {
+  list-style: none;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 1.6rem 8px;
+  border-radius: 50%;
+  border: 2px solid #faa500;
+  display: inline-block;
+}
+
+.banner-web-mobile .slick-dots li.slick-active {
+  background-color: #faa500;
+}
+
+.banner-web-mobile .slick-dots li button {
   display: none;
 }
 
@@ -259,11 +304,11 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
 
   /* banner */
 
-  .banner .banner-web {
+  .banner {
     display: none;
   }
 
-  .banner .banner-web.disable {
+  .banner.disable {
     display: block;
   }
 }
