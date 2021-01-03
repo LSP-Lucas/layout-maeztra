@@ -17,6 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
 
 body {
@@ -237,11 +238,11 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   padding: 2.4rem 0 2.1rem 0;
 }
 
-.benefits .container .img-benefits .slide {
+.benefits .container .bulets .slide {
   padding: 0 1.5rem;
 }
 
-.img-benefits .slick-dots {
+.bulets .slick-dots {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -250,7 +251,7 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   text-align: center;
 }
 
-.img-benefits .slick-dots li {
+.bulets .slick-dots li {
   list-style: none;
   width: 12px;
   height: 12px;
@@ -260,12 +261,39 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   display: inline-block;
 }
 
-.img-benefits .slick-dots li.slick-active {
+.bulets .slick-dots li.slick-active {
   background-color: #faa500;
 }
 
-.img-benefits .slick-dots li button {
+.bulets .slick-dots li button {
   display: none;
+}
+
+/* Marcas parceiras */
+
+.partner-brands .container {
+  width: 100%;
+  max-width: 1632px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.partner-brands {
+  margin-top: 74px;
+  margin-bottom: 80px;
+}
+
+.partner-brands .title-brands {
+  font-size: 2.2rem;
+  line-height: 4.9rem;
+  font-weight: bold;
+  text-align: center;
+  color: #353535;
+  padding-bottom: 17px;
+}
+
+.partner-brands .slide-partner-brands .slide-brands {
+  padding: 0 1.5rem;
 }
 
 @media (max-width: 1632px) {
@@ -275,6 +303,10 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   }
 
   .benefits .container {
+    max-width: 1224px;
+  }
+
+  .partner-brands .container {
     max-width: 1224px;
   }
 }
@@ -324,6 +356,10 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   .benefits .container {
     max-width: 930px;
   }
+
+  .partner-brands .container {
+    max-width: 930px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -368,8 +404,49 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   .banner.disable {
     display: block;
   }
+}
+
+@media (max-width: 400px) {
+  .benefits .container .img-benefits {
+    margin: 0 -16px 0 21px;
+  }
 
   .benefits .container .img-benefits .slide {
-    padding: 0 2.1rem 0 2.1rem;
+    width: 318px !important;
+    padding: 0 0 0 10px;
+  }
+
+  .img-benefits .slick-list {
+    padding: 0 9.5% 0 0;
+  }
+
+  .partner-brands .title-brands {
+    font-size: 2.2rem;
+    line-height: 3.7rem;
+    font-weight: bold;
+    text-align: center;
+    color: #353535;
+    padding-bottom: 17px;
+  }
+
+  .partner-brands {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .partner-brands .container .slide-partner-brands {
+    margin: 0 -16px 0 21px;
+  }
+
+  .partner-brands .container .slide-partner-brands .slide-brands {
+    width: 318px !important;
+    max-width: 100%;
+    padding: 0 0 0 10px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  }
+
+  .slide-partner-brands .slick-list {
+    padding: 0 9.5% 0 0;
   }
 }

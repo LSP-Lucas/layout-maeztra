@@ -42,6 +42,54 @@ $(function(){
       {
         breakpoint: 790,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+    ]
+  });
+
+  $('.slide-partner-brands').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1632,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 790,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
