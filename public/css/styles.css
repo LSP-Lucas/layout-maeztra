@@ -220,10 +220,62 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   display: none;
 }
 
+/* Beneficios */
+.benefits .container {
+  width: 100%;
+  max-width: 1632px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.benefits .title h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  color: #353535;
+  line-height: 2.4rem;
+  padding: 2.4rem 0 2.1rem 0;
+}
+
+.benefits .container .img-benefits .slide {
+  padding: 0 1.5rem;
+}
+
+.img-benefits .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+
+.img-benefits .slick-dots li {
+  list-style: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px -32px 8px;
+  border-radius: 50%;
+  border: 2px solid #faa500;
+  display: inline-block;
+}
+
+.img-benefits .slick-dots li.slick-active {
+  background-color: #faa500;
+}
+
+.img-benefits .slick-dots li button {
+  display: none;
+}
+
 @media (max-width: 1632px) {
   header .container {
     max-width: 1224px;
     padding: 2.4rem 4rem;
+  }
+
+  .benefits .container {
+    max-width: 1224px;
   }
 }
 
@@ -268,6 +320,10 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   .banner .arrows {
     padding: 0 2rem;
   }
+
+  .benefits .container {
+    max-width: 930px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -311,5 +367,9 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
 
   .banner.disable {
     display: block;
+  }
+
+  .benefits .container .img-benefits .slide {
+    padding: 0 2.1rem 0 2.1rem;
   }
 }
