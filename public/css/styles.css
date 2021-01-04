@@ -99,6 +99,15 @@ header .container nav ul li a {
   gap: 0.8rem;
 }
 
+.options-menu ul li {
+  padding: 14px 12px;
+}
+
+.options-menu ul li:last-child {
+  border: 1px solid #faa500;
+  border-radius: 8px;
+}
+
 .menu-mobile {
   display: none;
 }
@@ -651,6 +660,11 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   header .container {
     max-width: 1224px;
     padding: 2.4rem 4rem;
+  }
+
+  header .container .form {
+    max-width: 790px;
+    margin: 0 67px 0 53px;
   }
 
   .benefits .container {
