@@ -22,6 +22,7 @@ body {
 
 body {
   font-size: 1.4rem;
+  position: relative;
 }
 
 /* código do cabeçalho */
@@ -532,6 +533,120 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
   list-style: none;
 }
 
+/* Modal */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.modal.remove {
+  display: none;
+}
+
+.modal .container {
+  width: 851px;
+  height: auto;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .btn-modal {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.modal .container-modal {
+  display: flex;
+  background-color: #fff;
+  height: auto;
+}
+
+.modal .container-modal .modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.modal .container-modal .modal-form .img-email {
+  padding-bottom: 12px;
+}
+
+.container-modal .modal-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.modal .container-modal .modal-form span {
+  padding-bottom: 12px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #464b54;
+}
+
+.modal .container-modal .modal-form p:first-of-type {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #787d83;
+}
+
+.modal .container-modal .modal-form p:last-of-type {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: bold;
+  color: #787d83;
+  padding-bottom: 25px;
+}
+
+.modal .container-modal .modal-form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  padding: 0 5px 0 13px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #787d83;
+  margin-bottom: 10px;
+}
+
+.modal .container-modal .modal-form button {
+  width: 100%;
+  height: 40px;
+  background-color: #faa500;
+  border-radius: 10px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.modal .container-modal .modal-form button img {
+  padding-left: 8px;
+}
+
 @media (max-width: 1632px) {
   header .container {
     max-width: 1224px;
@@ -677,6 +792,25 @@ header .container:nth-last-child(1) nav ul li:first-of-type a {
 
   .footer-bottom .options-bottom ul {
     gap: 42px;
+  }
+
+  /* Modal */
+  .modal .modal-img {
+    display: none;
+  }
+
+  .modal .container {
+    width: 298px;
+    height: 307px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal .container-modal {
+    width: 100%;
+    height: 100%;
   }
 }
 
