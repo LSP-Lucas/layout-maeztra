@@ -127,8 +127,8 @@ $(function(){
       {
         breakpoint: 790,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           centerMode: false
         }
       },
