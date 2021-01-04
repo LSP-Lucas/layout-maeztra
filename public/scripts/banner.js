@@ -2,6 +2,7 @@ $(function(){
 
   $(".banner-web").slick({
     infinite: true,
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -11,6 +12,7 @@ $(function(){
 
   $(".banner-web-mobile").slick({
     infinite: true,
+    lazyLoad: 'ondemand',
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
